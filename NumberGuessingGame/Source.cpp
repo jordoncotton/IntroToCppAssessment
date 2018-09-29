@@ -1,33 +1,40 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
-
-using namespace std;
-
+	
 int main() 
 {
 	// System generates a random number.
-	srand((unsigned)time(0));
+	srand(time(0));
 	int number;
-	number = (rand() % 800);
-	cout << number << "\n";
+	number = rand() % 20 + 1;
 	// Computer guess a random number and user tries to guess that random number.
 	//char input = guess a number 1-800.
 	int input;
-	cout << "Guess a number 1-800! Input your answer" << endl;
-	cin >> input;
-	while (number != input)
-	{
-		if (number < input)
-		{
-			cout << "Your number is less than the seccret number" << endl;
-		}
-		else if (number > input)
-		{
-			cout << "Your number is greater than the secret number" << endl;
-		}
-	}
-	cout << "You guessed thr right number!" << endl;
+	std::cout << "Guess a number 1-20! Input your answer" << std::endl;
+	std::cin >> input;
 
-	system("pause");
+	do 
+	{
+		std::cout << "Enter your guess: ";
+		std::cin >> input;
+
+		if (input < number)
+		{
+			std::cout << "Your estimate is less, than the secret number" << std::endl;
+		}
+		else if (input > number)
+		{ 
+			std::cout << "Your estimate is more, than the secret number" << std::endl;
+		}
+		else
+		{
+			std::cout << "Your guess is right!" << std::endl;
+		}
+	} while (input != number);
+
+	system("PAUSE");
+
+	return 0;
 }
+
