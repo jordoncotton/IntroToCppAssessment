@@ -12,11 +12,9 @@ int main()
 	//char input = guess a number 1-800.
 	int input;
 	std::cout << "Guess a number 1-20! Input your answer" << std::endl;
-	std::cin >> input;
 
 	do 
 	{
-		std::cout << "Enter your guess: ";
 		std::cin >> input;
 
 		if (input < number)
