@@ -1,0 +1,3 @@
+﻿  Game.cpp
+c:\users\s188044\source\repos\introtoc-6\lab00\game.cpp(45): warning C4715: 'Game::Battle': not all control paths return a value
+  LAB00.vcxproj -> C:\Users\s188044\Source\Repos\IntrotoC-6\Debug\LAB00.exe
