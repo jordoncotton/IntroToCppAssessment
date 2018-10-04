@@ -9,7 +9,7 @@ int main()
 	int number;
 	number = rand() % 20 + 1;
 	// Computer guess a random number and user tries to guess that random number.
-	//char input = guess a number 1-800.
+	//char input = guess a number 1-20.
 	int input;
 	std::cout << "Guess a number 1-20! Input your answer" << std::endl;
 
